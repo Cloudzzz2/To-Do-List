@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <title>To-Do List</title>
+    </head>
+    <body>
+        <div class="addTask">
+            <div class="first">
+                <p class="grayText">Приоритет:</p>
+                <select id="prioritySelect"
+                        class="prioritySelect"
+                        value="2">
+                    <option value="1">низкий</option>
+                    <option selected
+                            value="2">
+                            средний
+                    </option>
+                    <option value="3">высокий</option>
+                </select>
+            </div>
+            <div class="second">
+                <p class="grayText">Текст задачи:</p>
+                <input type="text"
+                       id="taskTextField"
+                       placeholder="Введите текст..."
+                       class="taskTextField" >
+            </div>
+            <button onclick="addTask()"
+                    class="addTaskButton">
+                    Добавить задачу
+            </button>
+        </div>
+        <div class="sortTask">
+            <div class="filter">
+                <span class="priorityFilter">
+                    <span>Фильтр по приоритету:</span>
+                    <span>
+                        <select id="universalSelect"
+                                class="universalSelect">
+                            <option value="1">низкий</option>
+                            <option value="2">средний</option>
+                            <option value="3">высокий</option>
+                            <option selected
+                                    value="4">
+                                    любой
+                            </option>
+                        </select>
+                    </span>
+                </span>
+                <span class="statusFilter">
+                    <span>Фильтр по статусу:</span>
+                    <span class="statusCheckboxGroup">
+                        <span class="statusCheckboxText">активные</span>
+                        <input id="active"
+                               type="checkbox" 
+                               value="true"
+                               checked>
+                        <span class="statusCheckboxText">отменённые</span>
+                        <input id="canceled"
+                               type="checkbox" 
+                               checked
+                               value="true">
+                        <span class="statusCheckboxText">завершённые</span>
+                        <input id="completed"
+                               type="checkbox"
+                               checked 
+                               value="true">
+                    </span>
+                </span>
+            </div>
+            <div class="sort">
+                <span class="sortByDate">
+                    <span>Сортировка по дате:</span>
+                    <span>
+                        <select id="universalSelectDate"
+                                class="universalSelectDate">
+                            <option value="1">дата создания &#8593;</option>
+                            <option value="2">дата создания &#8595;</option>
+                        </select>
+                    </span>
+                </span>
+                <span class="sortByPriority">
+                    <span>Сортировка по приоритету:</span>
+                    <span>
+                        <select id="universalSelectPriority"
+                                class="universalSelect">
+                            <option value="1">приоритет &#8593;</option>
+                            <option value="2">приоритет &#8595;</option>
+                        </select>
+                    </span>
+                </span>
+            </div>
+            <div class="search">
+                <span>Поиск задачи по тексту:</span>
+                <span>
+                    <input placeholder="Начните вводить текст задачи..." 
+                           id="taskSearch"
+                           class="taskSearch">
+                </span>
+            </div>
+        </div>
+        <div id="tasks"
+        class="tasks">
+            <div id="highPriority"
+                 style="display: none;"
+                 class="highPriority">
+                <div id="highPriorityField"
+                        class="highPriorityField">
+                </div>
+            </div>
+            <div id="mediumPriority"
+                 class="mediumPriority">
+                    <div id="mediumPriorityField"
+                            class="mediumPriorityField">
+                    </div>
+            </div>
+            <div id="lowPriority"
+                 style="display: none;"
+                 class="lowPriority">
+                <div id="lowPriorityField"
+                        class="lowPriorityField">
+                </div>
+            </div>
+        </div> 
+        <script src="main.js"></script>
+    </body>
+</html>

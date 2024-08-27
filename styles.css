@@ -1,0 +1,234 @@
+.addTask {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 1000px;
+    background-color: #d0d9d3ea;
+}
+
+.sortTask {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 1000px;
+    background-color: #d0d9d3ea;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1000px;
+    background-color: #d0d9d3ea;
+}
+
+
+.first {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.priority {
+    width: 200px;
+}
+
+.prioritySelect {
+    width: 200px;
+}
+
+.second {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 250px;
+    width: 400px;
+}
+
+.addTaskButton {
+    height: 19px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 770px;
+    position: absolute;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+.taskTextField {
+    width: 450px;
+}
+
+.grayText {
+    color: rgba(128, 128, 128, 0.741);
+}
+
+.filter {
+    display: flex;
+    margin-top: 20px;
+    height: 35px;
+}
+
+.sort {
+    margin-top: 40px;
+    height: 35px;
+}
+
+.search {
+    margin-top: 30px;
+    height: 35px;
+}
+
+.priorityFilter {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.universalSelect {
+    margin-left: 10px;
+    width: 200px;
+}
+
+.statusFilter {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.statusCheckboxGroup {
+    margin-left: 20px;
+}
+
+.statusCheckboxText {
+    color: rgba(128, 128, 128, 0.741);
+    margin-left: 10px;
+}
+
+.sortByDate {
+    margin-left: 20px;
+}
+
+.sortByPriority {
+    margin-left: 35px;
+}
+
+.universalSelectDate {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.search {
+    margin-left: 20px;
+}
+
+.taskSearch {
+    margin-left: 20px;
+    width: 700px;
+}
+
+
+.highPriority {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.highPriorityField {
+    display: flex;
+    flex-direction: column;
+}
+
+.highPriorityText {
+    padding-left: 40px;
+    color: #32CD32;
+}
+
+.mediumPriority {
+    margin-top: 50px;
+    margin-right: -7px;
+    display: flex;
+    align-items: center;
+}
+
+.mediumPriorityField {
+    display: flex;
+    flex-direction: column;
+}
+
+.mediumPriorityText {
+    padding-left: 40px;
+    color: #eea70f;
+}
+
+.lowPriority {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.lowPriorityField {
+    display: flex;
+    flex-direction: column;
+}
+
+.lowPriorityText {
+    margin-right: 14px;
+    padding-left: 40px;
+    color: #bb0b0b;
+}
+
+.material-icons {
+    margin-left: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.taskEdit {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    background-color: white;
+    border-radius: 1%;
+    width: 700px;
+    min-height: 100px;
+    height: fit-content;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.crossSpan {
+    cursor: pointer;
+    margin-left: 425px;
+}
+
+.checkSpan {
+    cursor: pointer;
+    margin-left: 425px;
+}
+
+.taskText {
+    margin-left: 15px;
+    width: 230px;
+    height: fit-content;
+    outline: none;
+}
+
+.taskDate {
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 12px;
+}
